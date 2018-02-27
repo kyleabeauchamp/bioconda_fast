@@ -1,7 +1,5 @@
-diff --git a/Makefile b/Makefile
-index 7151435..42fa0da 100644
---- a/Makefile
-+++ b/Makefile
+--- Makefile	2018-02-27 10:15:16.000000000 -0800
++++ new	2018-02-27 10:15:12.000000000 -0800
 @@ -1,6 +1,6 @@
  CC=			gcc
  #CC=			clang --analyze
@@ -10,7 +8,7 @@ index 7151435..42fa0da 100644
  WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
  AR=			ar
  DFLAGS=		-DHAVE_PTHREAD $(WRAP_MALLOC)
-@@ -11,7 +11,7 @@ AOBJS=		bwashm.o bwase.o bwaseqio.o bwtgap.o bwtaln.o bamlite.o \
+@@ -11,7 +11,7 @@
  			bwtsw2_core.o bwtsw2_main.o bwtsw2_aux.o bwt_lite.o \
  			bwtsw2_chain.o fastmap.o bwtsw2_pair.o
  PROG=		bwa

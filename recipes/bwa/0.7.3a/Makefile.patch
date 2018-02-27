@@ -1,18 +1,9 @@
---- Makefile.bak	2018-02-27 10:15:16.000000000 -0800
-+++ Makefile	2018-02-27 10:15:12.000000000 -0800
-@@ -1,6 +1,6 @@
+--- Makefile.bak	2018-02-27 10:26:19.000000000 -0800
++++ Makefile	2018-02-27 10:26:31.000000000 -0800
+@@ -1,5 +1,5 @@
  CC=			gcc
- #CC=			clang --analyze
--CFLAGS=		-g -Wall -Wno-unused-function -O2
-+CFLAGS=		-g -Wall -Wno-unused-function -Ofast -march=haswell
- WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
+-CFLAGS=		-g -Wall -O2
++CFLAGS=		-g -Wall -Ofast -march=haswell
  AR=			ar
- DFLAGS=		-DHAVE_PTHREAD $(WRAP_MALLOC)
-@@ -11,7 +11,7 @@
- 			bwtsw2_core.o bwtsw2_main.o bwtsw2_aux.o bwt_lite.o \
- 			bwtsw2_chain.o fastmap.o bwtsw2_pair.o
- PROG=		bwa
--INCLUDES=
-+INCLUDES=
- LIBS=		-lm -lz -lpthread
- SUBDIRS=	.
+ DFLAGS=		-DHAVE_PTHREAD
+ LOBJS=		utils.o kstring.o ksw.o bwt.o bntseq.o bwa.o bwamem.o bwamem_pair.o

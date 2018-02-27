@@ -13,7 +13,7 @@ source:
   url: http://downloads.sourceforge.net/project/bio-bwa/bwa-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
   patches:
-      my.patch
+      - Makefile.patch
 
 requirements:
   build:

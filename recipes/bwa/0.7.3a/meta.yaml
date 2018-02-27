@@ -17,11 +17,8 @@ source:
 
 requirements:
   build:
-    - gcc                       # [not osx]
-    - llvm                      # [osx]
     - zlib {{CONDA_ZLIB}}*
   run:
-    - libgcc                    # [not osx]
     - zlib {{CONDA_ZLIB}}*
 
 test:

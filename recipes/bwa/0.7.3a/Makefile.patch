@@ -1,5 +1,5 @@
---- Makefile	2018-02-27 10:15:16.000000000 -0800
-+++ new	2018-02-27 10:15:12.000000000 -0800
+--- Makefile.bak	2018-02-27 10:15:16.000000000 -0800
++++ Makefile	2018-02-27 10:15:12.000000000 -0800
 @@ -1,6 +1,6 @@
  CC=			gcc
  #CC=			clang --analyze
@@ -12,8 +12,7 @@
  			bwtsw2_core.o bwtsw2_main.o bwtsw2_aux.o bwt_lite.o \
  			bwtsw2_chain.o fastmap.o bwtsw2_pair.o
  PROG=		bwa
--INCLUDES=	
+-INCLUDES=
 +INCLUDES=
  LIBS=		-lm -lz -lpthread
  SUBDIRS=	.
- 
